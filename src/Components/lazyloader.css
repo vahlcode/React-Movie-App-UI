@@ -1,0 +1,46 @@
+.lazyloader{
+    height: 100vh;
+    width: 100vw;
+    background: #161625;
+    color: #f2f1f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lazyloader>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lazyloader>div>h4{
+    font-weight: 300;
+}
+
+.loading-bar{
+    height: 5px;
+    width: 200px;
+    background: #0a0113;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.loading-bar-inner{
+    border-radius: 4px;
+    height: 100%;
+    width: 0%;
+    background: #9123ff;
+    animation: load 2s infinite;
+}
+
+@keyframes load{
+    from {
+        width: 0%;        
+    }
+    to{
+        width: 100%;
+    }
+}

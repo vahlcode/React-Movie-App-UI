@@ -1,0 +1,122 @@
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--light-bg-color);
+    padding: 20px 20px;
+    z-index: 1000;
+}
+
+.navigation-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.navigation-link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation-link a {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 5px;
+    color: var(--body-font-color);
+    transition: .5s;
+}
+
+.navigation-link a:hover {
+    background: var(--dark-bg-color);
+    color: var(--primary-color);
+    transition: .5s;
+    width: 100%;
+}
+
+.navigation-link a>i {
+    color: #b9b9b9;
+    font-size: 14px;
+    transition: 1s;
+}
+
+.navigation-link a:hover>i {
+    color: var(--primary-color);
+    transition: 1s;
+}
+
+.navigation-link a>span {
+    display: none;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 961px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        background: var(--light-bg-color);
+        padding: 32px 0;
+    }
+    
+    .navigation-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .navigation-link {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        list-style: none;
+    }
+    
+    .navigation-link a {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 20px 30px;
+        color: var(--body-font-color);
+        transition: .5s;
+    }
+    
+    .navigation-link a:hover {
+        background: var(--dark-bg-color);
+        color: var(--primary-color);
+        display: flex;
+        padding: 20px 30px 20px 40px;
+        transition: .5s;
+        width: 100%;
+    }
+    
+    .navigation-link a>i {
+        width: 10%;
+        color: #b9b9b9;
+        transition: 1s;
+    }
+    
+    .navigation-link a:hover>i {
+        color: var(--primary-color);
+        transition: 1s;
+    }
+    
+    .navigation-link a>span {
+        margin-left: 20px;
+        margin-top: 0;
+        font-size: 16px;
+        display: block;
+    }
+}

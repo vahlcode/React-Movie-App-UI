@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  max-width: 100%;
+  transition: .5s;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  background: var(--light-bg-color);
+}
+
+::-webkit-scrollbar-thumb{
+  width: 8px;
+  background: var(--primary-color);
+  border-radius: 20px;
+  transition: .5s linear;
+}
+
+body {
+  background: var(--dark-bg-color);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  color: #666666;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
